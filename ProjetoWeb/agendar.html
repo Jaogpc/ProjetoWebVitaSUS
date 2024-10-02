@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VitaSUS</title>
+    <link rel="stylesheet" href="/styles/styleForm.css">
+</head>
+<body>
+    <div class="login-box">
+        <h2>Agendamento de consulta</h2>
+        <form action="agendarComp.html" method="get">
+            <div class="textbox">
+                <input type="text" placeholder="Nome do médico" name="doutor" required>
+            </div>
+            <div class="textbox">
+                <input type="text" placeholder="Nome do paciente" name="paciente" required>
+            </div>
+            <div class="textbox">
+                <input type="text" placeholder="CPF do paciente" name="documento" required>
+            </div>
+            <div class="textbox">
+                <input type="date" placeholder="Data da consulta" name="data" required>
+            </div>
+            <div class="textbox">
+                <input type="time" placeholder="Horário da consulta" name="hora" required>
+            </div>
+            <button type="submit" class="btn">Agendar</button>
+            <br>
+            <br>
+            <button onclick="window.location.href='index.html'" class="btn">Menu</button>
+        </form>
+    </div>
+</body>
+</html>
